@@ -1,10 +1,11 @@
 {
   "name": "sui-plus",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/sui-plus.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name sui-plus --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",

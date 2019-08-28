@@ -1,8 +1,8 @@
-// import animateText from './animateText'
+import suiBadge from './suiBadge'
 // import liuButton from './liuButton'
 
 const components = [
-    // animateText,
+    suiBadge,
     // liuButton
 ]
 
@@ -17,6 +17,6 @@ if (typeof window !== 'undefined' && window.Vue){
 
 export default {
     install,
-    // animateText,
+    suiBadge,
     // liuButton
 }
