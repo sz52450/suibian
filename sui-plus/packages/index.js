@@ -1,9 +1,11 @@
 import suiBadge from './suiBadge'
+import suiHeader from './suiHeader'
 // import liuButton from './liuButton'
 
 const components = [
     suiBadge,
     // liuButton
+    suiHeader
 ]
 
 const install = function (Vue) {
@@ -18,5 +20,6 @@ if (typeof window !== 'undefined' && window.Vue){
 export default {
     install,
     suiBadge,
+    suiHeader
     // liuButton
 }
