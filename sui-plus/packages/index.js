@@ -1,10 +1,10 @@
 import suiBadge from './suiBadge'
 import suiHeader from './suiHeader'
-// import liuButton from './liuButton'
+import suiButton from './suiButton'
 
 const components = [
     suiBadge,
-    // liuButton
+    suiButton,
     suiHeader
 ]
 
@@ -20,6 +20,6 @@ if (typeof window !== 'undefined' && window.Vue){
 export default {
     install,
     suiBadge,
-    suiHeader
-    // liuButton
+    suiHeader,
+    suiButton
 }
