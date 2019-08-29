@@ -1,8 +1,7 @@
 <template>
-    <div :class="['button', type , tips]">
+    <div :class="['button', type , round?'round':'']">
         <slot></slot>
     </div>
-	
 </template>
 
 <script>
@@ -13,15 +12,17 @@ export default {
             type: String,
             default: 'normal'
         },
-        tips:{
-            type:String,
-            default:'normal'
-        }
+        round:{
+            type:Boolean,
+            default:false
+        },
     }
 }
 </script>
 
 <style lang="scss" scoped>
+    
+    
     .button{
 		max-width: 100px;
         height: 30px;
@@ -42,7 +43,6 @@ export default {
         border: 1px solid #ccc;
         color: #ccc;
     }
-    
     .primary{
         background: #409EFF;
         color: #fff;
