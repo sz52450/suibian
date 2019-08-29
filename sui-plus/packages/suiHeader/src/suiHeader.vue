@@ -1,6 +1,6 @@
 <template>
     <div class="haeder">
-        <span class="left">← {{title}}</span>|<span class="right">{{content}}</span>
+        <span class="left" @click="aa">← {{title}}</span>|<span class="right">{{content}}</span>
     </div>
 </template>
 <script>
@@ -13,7 +13,12 @@ export default {
         },
         content:String
         
-    }
+    },
+    methods: {
+        aa(){
+            this.$router.go(-1)
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>

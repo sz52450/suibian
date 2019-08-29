@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "cheng-button",
+    name: "sui-button",
     props: {
         type: {
             type: String,
