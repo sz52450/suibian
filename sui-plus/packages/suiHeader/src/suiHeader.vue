@@ -1,6 +1,6 @@
 <template>
     <div class="haeder">
-        <span class="left" @click="aa">← {{title}}</span>|<span class="right">{{content}}</span>
+        <span class="left" @click="back">← {{title}}</span>|<span class="right">{{content}}</span>
     </div>
 </template>
 <script>
@@ -15,7 +15,7 @@ export default {
         
     },
     methods: {
-        aa(){
+        back(){
             this.$router.go(-1)
         }
     },
