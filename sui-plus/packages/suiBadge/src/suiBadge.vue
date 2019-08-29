@@ -36,8 +36,15 @@ export default {
             background-color: #ecf5ff;
             cursor: pointer;
         }
+        &:active{
+            border-color:#409eff;
+        }
     }
-
+    .active{
+        color:#409eff;
+        border-color: #c6e2ff;
+        background-color: #ecf5ff;  
+    }
     .rightT{
         position: absolute;
         top: -10px;
