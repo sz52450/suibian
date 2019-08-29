@@ -1,5 +1,5 @@
 <template>
-    <div :class="['button', type , round?'round':'']">
+    <div :class="['button', type , round?'round':'' ,disabled?'disabled':'']">
         <slot></slot>
     </div>
 </template>
@@ -16,6 +16,10 @@ export default {
             type:Boolean,
             default:false
         },
+        disabled:{
+            type:Boolean,
+            default:false
+        }
     }
 }
 </script>
@@ -33,10 +37,11 @@ export default {
         line-height: 30px;
         text-align: center;
         padding: 5px;
+        cursor: pointer;
     }
     .button:hover{
-        cursor: pointer;
-        opacity:0.50;
+
+        opacity:0.8;
     }
     .normal{
         background: #fff;
@@ -65,5 +70,12 @@ export default {
     }
     .round{
         border-radius: 30px !important;
+    }
+    .disabled{
+        cursor: not-allowed !important;
+        opacity:0.50 ;
+    }
+    .disabled:hover{
+        opacity:0.50 !important;
     }
 </style>
