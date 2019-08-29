@@ -1,15 +1,14 @@
 <template>
     <div class="content" >
         <span class="rightT" v-if="value">{{dealMax(value)}} </span>
-        {{text}}
+        <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
-    name:"suiBadge",
+    name:"sui-badge",
     props: {
-        text:String,
         value:String,
         max:String
     },
